@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🛒 My Store</h1>
+
+        <section class="form-section">
+            <h2>Add Product</h2>
+
+            <form id="productForm">
+
+                <div class="form-group">
+                    <label for="name">Product Name</label>
+                    <input type="text" id="name" placeholder="Enter product name">
+                    <p class="error" id="nameError"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="number" id="price" placeholder="Enter price">
+                    <p class="error" id="priceError"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="qty">Quantity</label>
+                    <input type="number" id="qty" placeholder="Enter quantity">
+                    <p class="error" id="qtyError"></p>
+                </div>
+
+                <button type="submit">Add Product</button>
+
+            </form>
+        </section>
+
+
+        <section class="products-section">
+            <h2>Products</h2>
+
+            <div id="productList"></div>
+
+            <div class="total">
+                Total: $<span id="total">0.00</span>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
