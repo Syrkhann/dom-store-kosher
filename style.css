@@ -117,3 +117,12 @@ button:hover {
     font-weight: bold;
     margin-top: 25px;
 }
+
+
+.product-actions button {
+    min-width: 40px;
+}
+
+.product-actions .delete {
+    min-width: 70px;
+}
